@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎮 Game Setup Screen -->
+  <div class="setup-screen">
+    <h2>Start New Game</h2>
+    
+    <label>Choose Mode:</label>
+    <select id="game-mode">
+      <option value="vs-ai">Player vs AI</option>
+      <option value="vs-player">Player vs Player</option>
+    </select>
+
+    <div id="player-names">
+      <input type="text" id="player1-name" placeholder="Player 1 Name" required />
+      <input type="text" id="player2-name" placeholder="AI Name" required />
+    </div>
+
+    <div id="difficulty-options">
+      <label>AI Difficulty:</label>
+      <select id="ai-difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard" selected>Hard</option>
+      </select>
+    </div>
+
+    <button id="start-game">Start Game</button>
+  </div>
+
+  <!-- 🎲 Game Board -->
+  <div class="container" id="game-container">
+    <h1>Tic Tac Toe</h1>
+    
+    <div id="scoreboard">
+      <p><strong><span id="score-x-name">You</span> (X):</strong> <span id="x-score">0</span></p>
+      <p><strong><span id="score-o-name">AI</span> (O):</strong> <span id="o-score">0</span></p>
+    </div>
+
+    <div id="game-board">
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+      <div class="cell" data-cell></div>
+    </div>
+
+    <div id="game-message"></div>
+    <button id="restart-button">Restart Game</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
