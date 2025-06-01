@@ -14,7 +14,7 @@ A clean, professional, and fully functional Tic Tac Toe game built using **HTML*
 
 ## Demo
 
-Check out the live game here: [Your GitHub Pages URL]
+Check out the live game here: [https://rightsimanjena.github.io/tic-tac-toe/]
 
 ## How to Play
 
